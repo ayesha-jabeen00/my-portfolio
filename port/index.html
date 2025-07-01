@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha Jabeen - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="loading-text">AJ</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-subtitle">Crafting Digital Experiences</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <span class="logo-text">Ayesha</span>
+                    <span class="logo-accent">Jabeen</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#resume" class="nav-link" data-text="Resume">Resume</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/ayesha-jabeen00" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayesha-jabeen-89a4773617" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:ayeshajabe38@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="word" data-word="Ayesha">Ayesha</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="word gradient-text" data-word="Jabeen">Jabeen</span>
+                    </span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate frontend developer crafting beautiful, responsive web experiences 
+                    with clean code and modern design principles. Currently growing at Voat Network.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-text">View My Work</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="btn-text">Get In Touch</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3+">0</span>
+                        <span class="stat-label">months Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">% Commitment</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="profile-ring"></div>
+                        <div class="profile-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon-item" style="--delay: 0s">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="icon-item" style="--delay: 0.5s">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="icon-item" style="--delay: 1s">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="icon-item" style="--delay: 1.5s">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate Frontend Developer on a Growth Journey</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-content">
+                        <p class="about-paragraph">
+                            I'm a highly motivated and ambitious individual with a strong foundation in HTML, CSS, and JavaScript, 
+                            currently learning full-stack development. As a Frontend Development Intern at Voat Network, I'm gaining 
+                            hands-on experience building responsive and user-friendly websites.
+                        </p>
+                        <p class="about-paragraph">
+                            My journey in web development is driven by a passion for creating beautiful, functional interfaces that 
+                            provide exceptional user experiences. I combine technical skills with creative design thinking to build 
+                            modern web solutions that make a difference.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Code Advocate</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design Expert</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Performance Focused</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-outline">
+                            <span class="btn-text">Let's Work Together</span>
+                            <div class="btn-bg"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-container">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control close"></span>
+                                    <span class="control minimize"></span>
+                                    <span class="control maximize"></span>
+                                </div>
+                                <span class="window-title">portfolio.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="line-number">1</span>
+                                    <span class="code-text">
+                                        <span class="keyword">const</span> 
+                                        <span class="variable">developer</span> = {
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">2</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;<span class="property">name</span>: 
+                                        <span class="string">'Ayesha Jabeen'</span>,
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">3</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;<span class="property">role</span>: 
+                                        <span class="string">'Frontend Developer'</span>,
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">4</span>
+                                    <span class="code-text">
+                                        &nbsp;&nbsp;<span class="property">passion</span>: 
+                                        <span class="string">'Creating Amazing UIs'</span>
+                                    </span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">5</span>
+                                    <span class="code-text">};</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="tech-item">HTML5</div>
+                            <div class="tech-item">CSS3</div>
+                            <div class="tech-item">JavaScript</div>
+                            <div class="tech-item">React</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">My Professional Journey & Growth</p>
+            </div>
+            <div class="resume-content">
+                <div class="timeline">
+                    <div class="timeline-section">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-briefcase"></i>
+                            Internship
+                        </h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Frontend Development Intern</h4>
+                                    <span class="timeline-date">April 2025 - Present</span>
+                                </div>
+                                <p class="timeline-company">Voat Network</p>
+                                <p class="timeline-description">
+                                    Currently working as a Frontend Development Intern, gaining hands-on experience in building 
+                                    responsive and user-friendly websites. Responsibilities include designing static and dynamic 
+                                    web pages using HTML, CSS, and JavaScript.
+                                </p>
+                                <div class="timeline-skills">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-section">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Bachelor of Science</h4>
+                                    <span class="timeline-date">2024</span>
+                                </div>
+                                <p class="timeline-company">Bapu Jagjivan Ram Government Degree College</p>
+                                <p class="timeline-grade">CGPA: 8.48</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Intermediate</h4>
+                                    <span class="timeline-date">2021</span>
+                                </div>
+                                <p class="timeline-company">Sri Chaitanya Junior Kalashala College</p>
+                                <p class="timeline-grade">Percentage: 85.6%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-certificate"></i>
+                            Courses
+                        </h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Web Design</h4>
+                                    <span class="timeline-date">March 2025 - June 2025</span>
+                                </div>
+                                <p class="timeline-company">Skill Konnect, Begumpet</p>
+                                <p class="timeline-description">
+                                    Learning fundamentals of web designing, including HTML, CSS, responsive design, 
+                                    and user-friendly layouts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-download">
+    <div class="download-card">
+        <div class="download-icon">
+            <i class="fas fa-file-pdf"></i>
+        </div>
+        <div class="download-content">
+            <h4>Download Resume</h4>
+            <p>Get a copy of my complete resume</p>
+        </div>
+        <a class="btn btn-download" 
+           href="https://drive.google.com/uc?export=download&id=17p9AJu9GoZIIPH4DGefb9MKC7PgL3auR" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <span class="btn-text">
+                <i class="fas fa-download"></i>
+                Download PDF
+            </span>
+            <div class="btn-bg"></div>
+        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing My Web Development Journey</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/13866077/pexels-photo-13866077.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Coffee Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayesha-jabeen00.github.io/coffee-website/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/ayesha-jabeen00/coffee-website" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Coffee Website</h3>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <p>Responsive coffee website featuring dark and light mode toggle with modern design and smooth animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Pizza Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayesha-jabeen00.github.io/responsive-pizza-websites/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/ayesha-jabeen00/responsive-pizza-websites" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Pizza Restaurant</h3>
+                            <div class="project-status">Popular</div>
+                        </div>
+                        <p>Fully responsive pizza restaurant website with interactive menu and modern layout design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayesha-jabeen00.github.io/Ecommerce-website/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/ayesha-jabeen00/Ecommerce-website" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>E-commerce Platform</h3>
+                            <div class="project-status">New</div>
+                        </div>
+                        <p>Modern e-commerce platform with product showcase, shopping cart functionality, and responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1496372/pexels-photo-1496372.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Brand Promotion">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayesha-jabeen00.github.io/brand-promotion-website/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/ayesha-jabeen00/brand-promotion-website" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Brand Promotion</h3>
+                            <div class="project-status">Creative</div>
+                        </div>
+                        <p>Creative brand promotion website with engaging visuals and interactive elements.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Shoe E-commerce">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayesha-jabeen00.github.io/shoe-E-commerce-site/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/ayesha-jabeen00/shoe-E-commerce-site" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Shoe E-commerce</h3>
+                            <div class="project-status">Trending</div>
+                        </div>
+                        <p>Specialized e-commerce website for shoe retail with product filtering and modern UI design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="portfolio">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop" alt="Photographer Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ayesha-jabeen00.github.io/photographer-portfolio/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/ayesha-jabeen00/photographer-portfolio" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Photographer Portfolio</h3>
+                            <div class="project-status">Artistic</div>
+                        </div>
+                        <p>Elegant portfolio website for photographers with gallery showcase and contact features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <p class="section-subtitle">Technologies I Work With</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Frontend Technologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">HTML5</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">CSS3</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js-square"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">React.js</span>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-bootstrap"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">Bootstrap</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">Canva</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-file-word"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">MS Office</span>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="skill-details">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-level">Basic</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60"></div>
+                                </div>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Let's Connect</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Ready to bring your ideas to life? Let's discuss your next project</p>
+    </div>
+
+    <div class="contact-content">
+      <!-- Left Info -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>ayeshajabe38@gmail.com</p>
+              <a href="mailto:ayeshajabe38@gmail.com" class="contact-link">Send Email</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+91 9908132202</p>
+              <a href="tel:+919908132202" class="contact-link">Call Now</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Hyderabad, India</p>
+              <span class="contact-link">Available for Remote Work</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-connect">
+          <h4>Connect With Me</h4>
+          <div class="social-links">
+            <a href="https://github.com/ayesha-jabeen00" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ayesha-jabeen-89a4773617" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:ayeshajabe38@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="contact-form-container">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-header">
+            <h3>Send Me a Message</h3>
+            <p>I'd love to hear about your project</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Full Name</label>
+              <span class="form-line"></span>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email Address</label>
+              <span class="form-line"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required>
+            <label for="subject">Subject</label>
+            <span class="form-line"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <label for="message">Message</label>
+            <span class="form-line"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="btn-text">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </span>
+            <div class="btn-bg"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Ayesha</span>
+                        <span class="logo-accent">Jabeen</span>
+                    </div>
+                    <p class="footer-description">
+                        Frontend Developer passionate about creating beautiful, responsive web experiences 
+                        with clean code and modern design principles.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/ayesha-jabeen00" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayesha-jabeen-89a4773617" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ayeshajabe38@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#skills">Frontend Development</a></li>
+                            <li><a href="#skills">Responsive Design</a></li>
+                            <li><a href="#skills">UI/UX Design</a></li>
+                            <li><a href="#contact">Consultation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:ayeshajabe38@gmail.com">ayeshajabe38@gmail.com</a></li>
+                            <li><a href="tel:+919908132202">+91 9908132202</a></li>
+                            <li><span>Hyderabad, India</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Ayesha Jabeen. All rights reserved.</p>
+                    <p>Designed & Developed with <i class="fas fa-heart"></i> by Ayesha Jabeen</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
