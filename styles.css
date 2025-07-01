@@ -65,33 +65,7 @@ body {
     padding: var(--container-padding);
 }
 
-/* Custom Cursor */
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.1s ease;
-}
 
-.cursor-outline {
-    width: 32px;
-    height: 32px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 9998;
-    transition: all 0.1s ease;
-    opacity: 0.5;
-}
 
 /* Loading Screen */
 .loading-screen {
